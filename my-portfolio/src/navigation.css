@@ -1,0 +1,21 @@
+.nav {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* underline at bottom */
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+.nav:hover:after {
+  cursor: pointer;
+  width: 100%;
+}
