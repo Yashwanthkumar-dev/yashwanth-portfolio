@@ -154,22 +154,22 @@ function App() {
             <div className="mt-20">
               <p className="font-poppins text-white/40 xl:text-xl xl:leading-relaxed text-justify mx-4">
                 <span className="text-white/80">
-                  Java Full Stack Developer | Scalable Systems & Seamless
-                  UIs. 
-                </span> I build high-performance products with a focus on clean
+                  Java Full Stack Developer | Scalable Systems & Seamless UIs.
+                </span>{" "}
+                I build high-performance products with a focus on clean
                 architecture and user-centric design.
-                <br/>
                 <br />
-                 <span  className="text-accent">Based in Tamil Nadu,</span> I’m
+                <br />
+                <span className="text-accent">Based in Tamil Nadu,</span> I’m
                 passionate about the full development lifecycle—from solid
-                database design to responsive frontends. 
+                database design to responsive frontends.
                 <br />
-                <br />
-                I believe in code that
-                is as readable as it is functional, <span className="text-white/80">built to grow as your
-                business does.</span> 
+                <br />I believe in code that is as readable as it is functional,{" "}
+                <span className="text-white/80">
+                  built to grow as your business does.
+                </span>
               </p>
-              <ul className="text-white font-poppins mt-4 capitalize flex items-center gap-x-12 flex-wrap  overflow-hidden mx-4 space-y-3">
+              <ul className="text-white font-poppins mt-10 capitalize flex items-center gap-x-12 flex-wrap  overflow-hidden mx-4 space-y-3">
                 <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
                   clean code
                 </li>
@@ -182,7 +182,7 @@ function App() {
                 <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
                   fast learner
                 </li>
-                <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
+                <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer pointer-events-none">
                   open source
                 </li>
               </ul>
@@ -191,6 +191,101 @@ function App() {
         </section>
 
         {/* About me sectios ends */}
+
+        {/* project section starts */}
+
+        <div className="border border-t-white/5 relative overflow-hidden py-4 mx-4">
+          <div className="absolute bg-accent/10 w-50 h-50 top-10 right-19 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bg-accent/10 w-50 h-50 top-180 left-19 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="mt-13">
+            <h3 className=" text-accent font-poppins ml-3 xl:text-xl">work</h3>
+          </div>
+          <div>
+            <h1 className="text-white font-poppins ml-5 mt-2 text-4xl font-semibold tracking-tight xl:text-6xl">
+              Selected projects.
+            </h1>
+          </div>
+
+          <div className="mt-5">
+            <p className="text-white/40 font-poppins tracking-wider leading-relaxed font-light pl-4">
+              Real apps build end-to-end database to deployment
+            </p>
+          </div>
+
+          <div className="border border-accent/50 rounded-lg p-5 leading-relaxed mt-8 bg-white/3">
+            <div>
+              <h1 className="font-poppins text-accent text-lg">
+                SmileCart -Full Stack E-Commerce Platform
+              </h1>
+              <i></i>
+            </div>
+
+            <div>
+              <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
+                Designed a Robust REST API using Spring Boot for seamless
+                product management and user authentication.Implemented a Secure
+                Checkout Flow and integrated MySQL for efficient relational data
+                handling {"(Orders, Users, Products)."}
+                Built a Dynamic Shopping Experience with React.js and Tailwind
+                CSS, focusing on mobile-first responsiveness.
+              </p>
+            </div>
+
+            <ul className="text-white flex flex-wrap font-poppins items-center gap-4 mt-5">
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                Springboot
+              </li>
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                Reactjs
+              </li>
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                tailwindcss
+              </li>
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                java
+              </li>
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                mysql
+              </li>
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                docker
+              </li>
+            </ul>
+          </div>
+
+          <div className="border border-accent/50 rounded-lg p-5 leading-relaxed mt-8 bg-white/3">
+            <div>
+              <h1 className="font-poppins text-accent text-lg">
+                YoursGiftStory – Personalized Gifting Platform
+              </h1>
+              <i></i>
+            </div>
+
+            <div>
+              <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
+                Developing a Highly Visual & Interactive UI tailored to the
+                gifting industry's aesthetic needs. Focusing on User Experience
+                {" (UX)"} to simplify the customization process for personalized
+                gifts. Leveraging Tailwind CSS for rapid UI development and
+                ensuring pixel-perfect design across all devices.
+              </p>
+            </div>
+
+            <ul className="text-white flex flex-wrap font-poppins items-center gap-4 mt-5">
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                Reactjs
+              </li>
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                tailwindcss
+              </li>
+              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                freelance
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* project section ends */}
       </div>
     </>
   );
