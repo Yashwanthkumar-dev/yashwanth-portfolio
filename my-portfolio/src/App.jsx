@@ -1,3 +1,4 @@
+import { Code2, Database, ExternalLink, Layers, MonitorSmartphone } from "lucide-react";
 function App() {
   return (
     <>
@@ -194,98 +195,190 @@ function App() {
 
         {/* project section starts */}
 
-        <div className="border border-t-white/5 relative overflow-hidden py-4 mx-4">
+        <div className="border border-t-white/5 relative overflow-hidden py-20 mx-4">
           <div className="absolute bg-accent/10 w-50 h-50 top-10 right-19 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bg-accent/10 w-50 h-50 top-180 left-19 rounded-full blur-3xl pointer-events-none" />
 
           <div className="mt-13">
             <h3 className=" text-accent font-poppins ml-3 xl:text-xl">work</h3>
           </div>
-          <div>
-            <h1 className="text-white font-poppins ml-5 mt-2 text-4xl font-semibold tracking-tight xl:text-6xl">
-              Selected projects.
-            </h1>
-          </div>
-
-          <div className="mt-5">
-            <p className="text-white/40 font-poppins tracking-wider leading-relaxed font-light pl-4">
-              Real apps build end-to-end database to deployment
-            </p>
-          </div>
-
-          <div className="border border-accent/50 rounded-lg p-5 leading-relaxed mt-8 bg-white/3">
+          <div className=" xl:flex items-center justify-between">
             <div>
-              <h1 className="font-poppins text-accent text-lg">
-                SmileCart -Full Stack E-Commerce Platform
+              <h1 className="text-white font-poppins ml-5 mt-2 text-4xl font-semibold tracking-tight xl:text-6xl">
+                Selected projects.
               </h1>
-              <i></i>
             </div>
-
-            <div>
-              <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
-                Designed a Robust REST API using Spring Boot for seamless
-                product management and user authentication.Implemented a Secure
-                Checkout Flow and integrated MySQL for efficient relational data
-                handling {"(Orders, Users, Products)."}
-                Built a Dynamic Shopping Experience with React.js and Tailwind
-                CSS, focusing on mobile-first responsiveness.
+            <div className="mt-5">
+              <p className="text-white/40 font-poppins tracking-wider leading-relaxed font-light pl-4 mr-6">
+                Real apps build end-to-end database to deployment
               </p>
             </div>
-
-            <ul className="text-white flex flex-wrap font-poppins items-center gap-4 mt-5">
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                Springboot
-              </li>
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                Reactjs
-              </li>
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                tailwindcss
-              </li>
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                java
-              </li>
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                mysql
-              </li>
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                docker
-              </li>
-            </ul>
           </div>
+          <div className="xl:grid grid-cols-2 gap-8 lg:grid lg:grid-cols-2 mx-7">
+            <div className="border border-accent/20 rounded-lg p-5 leading-relaxed mt-8 bg-white/3 group">
+              <div className="flex item-center justify-between">
+                <h1 className="font-poppins text-accent text-lg sm:text-xl">
+                  SmileCart -Full Stack E-Commerce Platform
+                </h1>
+                <a href="">
+                  <ExternalLink
+                    size={20}
+                    className="text-accent group-hover:scale-[1.3] duration-700 transition-all"
+                  />
+                </a>
+              </div>
 
-          <div className="border border-accent/50 rounded-lg p-5 leading-relaxed mt-8 bg-white/3">
-            <div>
-              <h1 className="font-poppins text-accent text-lg">
-                YoursGiftStory – Personalized Gifting Platform
-              </h1>
-              <i></i>
+              <div>
+                <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
+                  Designed a Robust REST API using Spring Boot for seamless
+                  product management and user authentication.Implemented a
+                  Secure Checkout Flow and integrated MySQL for efficient
+                  relational data handling {"(Orders, Users, Products)."}
+                  Built a Dynamic Shopping Experience with React.js and Tailwind
+                  CSS, focusing on mobile-first responsiveness.
+                </p>
+              </div>
+
+              <ul className="text-white flex flex-wrap font-poppins items-center gap-4 mt-5">
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  Springboot
+                </li>
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  Reactjs
+                </li>
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  tailwindcss
+                </li>
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  java
+                </li>
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  mysql
+                </li>
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  docker
+                </li>
+              </ul>
             </div>
 
-            <div>
-              <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
-                Developing a Highly Visual & Interactive UI tailored to the
-                gifting industry's aesthetic needs. Focusing on User Experience
-                {" (UX)"} to simplify the customization process for personalized
-                gifts. Leveraging Tailwind CSS for rapid UI development and
-                ensuring pixel-perfect design across all devices.
-              </p>
-            </div>
+            <div className="border border-accent/20 rounded-lg p-5 leading-relaxed mt-8 bg-white/3 group">
+              <div className="flex item-center justify-between">
+                <h1 className="font-poppins text-accent/80 text-lg">
+                  YoursGiftStory – Personalized Gifting Platform
+                </h1>
+                <a href="">
+                  <ExternalLink
+                    size={20}
+                    className="text-accent group-hover:scale-[1.3] duration-700 transition-all"
+                  />
+                </a>
+              </div>
 
-            <ul className="text-white flex flex-wrap font-poppins items-center gap-4 mt-5">
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                Reactjs
-              </li>
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                tailwindcss
-              </li>
-              <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
-                freelance
-              </li>
-            </ul>
+              <div>
+                <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
+                  Developing a Highly Visual & Interactive UI tailored to the
+                  gifting industry's aesthetic needs. Focusing on User
+                  Experience
+                  {" (UX)"} to simplify the customization process for
+                  personalized gifts. Leveraging Tailwind CSS for rapid UI
+                  development and ensuring pixel-perfect design across all
+                  devices.
+                </p>
+              </div>
+
+              <ul className="text-white flex flex-wrap font-poppins items-center gap-4 mt-5">
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  Reactjs
+                </li>
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  tailwindcss
+                </li>
+                <li className="border border-accent/50 backdrop-md bg-white/5  px-5 py-1 rounded-xl text-accent tracking-wide">
+                  freelance
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         {/* project section ends */}
+
+        {/* expertise section starts */}
+        <div className="border border-t-white/5 mx-4">
+          <p className="text-accent font-poppins ml-3 xl:text-xl uppercase mt-10 tracking-wide">
+            expertise
+          </p>
+          <h1 className="text-white font-poppins ml-5 mt-2 text-4xl font-semibold tracking-wide xl:text-6xl">
+            What I bring.
+          </h1>
+          {/* cart starts */}
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:mx-16">
+            {/* 1 card */}
+            <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Full-Stack Architecture</h1>
+              <div className="flex items-center gap-3 mt-4 text-lg">
+                <i >
+                  <Layers size={20} className="text-accent/60"/>
+                </i>
+                <h2 className="text-accent/60 capitalize font-poppins">building logic and experience</h2>
+              </div>
+              <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
+                I don’t just build features; I architect systems where every
+                piece fits perfectly. My strength lies in bridging the gap
+                between a high-performance Java/Spring Boot backend and a
+                seamless React frontend. For me, it’s about ensuring that the
+                complex logic hidden under the hood translates into a fast,
+                intuitive, and reliable experience for the user. I make sure the
+                'handshake' between the server and the browser is always
+                flawless.
+              </p>
+            </div>
+
+            {/* 2 card */}
+            <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Backend & Database</h1>
+              <div className="flex items-center gap-3 mt-4 text-lg">
+                <i >
+                  <Database size={20} className="text-accent/60"/>
+                </i>
+                <h2 className="text-accent/60 capitalize font-poppins">Data Built for the Long Haul</h2>
+              </div>
+              <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
+               I believe a product is only as strong as its foundation. Whether it’s managing thousands of products in SmileCart or handling custom client data, I focus on building clean MySQL schemas that are optimized for speed and integrity. I’m obsessed with database normalization and query performance because I know that as your business scales, your data shouldn't be what slows you down. I build for today with an eye on tomorrow.
+              </p>
+            </div>
+
+            {/* 3 card */}
+            <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Frontend Excellence</h1>
+              <div className="flex items-center gap-3 mt-4 text-lg">
+                <i >
+                  <MonitorSmartphone size={20} className="text-accent/60"/>
+                </i>
+                <h2 className="text-accent/60 capitalize font-poppins">Interfaces with an Impact</h2>
+              </div>
+              <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
+               Code is invisible to the user—the interface is everything. That’s why I treat the frontend with as much respect as the backend logic. Using Tailwind CSS, I craft pixel-perfect, mobile-first UIs that don't just look good but feel natural to use. In projects like YoursGiftStory, I focus on the 'micro-moments'—smooth transitions and rapid load times—because I know that a great user experience is what turns a visitor into a loyal customer.
+              </p>
+            </div>
+
+            {/* 4 card */}
+            <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Software Engineering</h1>
+              <div className="flex items-center gap-3 mt-4 text-lg">
+                <i >
+                  <Code2 size={20} className="text-accent/60"/>
+                </i>
+                <h2 className="text-accent/60 capitalize font-poppins">Code that Speaks for Itself</h2>
+              </div>
+              <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
+               I’m a firm believer that 'done' is not the same as 'right.' I write code that is clean, modular, and built to be shared. By following SOLID principles and maintaining strict engineering standards, I ensure that my projects are easy to maintain and simple to scale. I focus on reducing technical debt from day one, so that when the business needs to pivot or grow, the codebase is a launchpad, not an anchor.
+              </p>
+            </div>
+          </div>
+          {/* cart ends*/}
+        </div>
+
+        {/* expertise section ends */}
       </div>
     </>
   );
