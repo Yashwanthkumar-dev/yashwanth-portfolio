@@ -110,14 +110,13 @@ function App() {
           </marquee>
         </div>
         {/* About me section starts*/}
-        <section className="mt-8 leading-relaxed mx-6">
-          <div>
-            <p className="text-accent font-poppins ml-3">About</p>
-            <h1 className="text-white font-poppins ml-5 mt-2 text-4xl font-semibold tracking-tight">
-              Who I am.
-            </h1>
-
-            <div className="border border-white/4 bg-white/5 text-poppins group text-white capitalize rounded-2xl mt-10 relative overflow-hidden backdrop-blur-md ">
+        <section className="mt-8 leading-relaxed xl:mx-17 pb-10">
+          <p className="text-accent font-poppins ml-3 xl:text-xl">About</p>
+          <h1 className="text-white font-poppins ml-5 mt-2 text-4xl font-semibold tracking-tight xl:text-6xl">
+            Who I am.
+          </h1>
+          <div className="xl:flex xl:justify-between xl:mx-6 xl:gap-x-5">
+            <div className="border border-white/4 bg-white/5 text-poppins group text-white capitalize rounded-2xl mt-10 relative overflow-hidden backdrop-blur-md mx-4 xl:w-230">
               <div className="absolute -top-10 right-10 w-42 h-52 bg-accent/10 rounded-full blur-3xl group-hover:bg-accent/30 transition-colors"></div>
               <i className="border-b h-60 border-white/10 text-[4rem] mx-auto flex items-center justify-evenly sm:h-70">
                 👨&zwj;💻
@@ -146,9 +145,47 @@ function App() {
               </div>
 
               <div className="flex border border-green-400/10 mx-3 items-center px-1 py-2 gap-x-3 bg-green-400/10 rounded-lg mt-3 mb-5">
-                <div className="p-1 rounded-full bg-green-500 w-1 h-1 ml-2"/>
-                <h2 className="text-green-500 text-[13px] font-semibold">open to work</h2>
+                <div className="p-1 rounded-full bg-green-500 w-1 h-1 ml-2" />
+                <h2 className="text-green-500 text-[13px] font-semibold">
+                  open to work
+                </h2>
               </div>
+            </div>
+            <div className="mt-20">
+              <p className="font-poppins text-white/40 xl:text-xl xl:leading-relaxed text-justify mx-4">
+                <span className="text-white/80">
+                  Java Full Stack Developer | Scalable Systems & Seamless
+                  UIs. 
+                </span> I build high-performance products with a focus on clean
+                architecture and user-centric design.
+                <br/>
+                <br />
+                 <span  className="text-accent">Based in Tamil Nadu,</span> I’m
+                passionate about the full development lifecycle—from solid
+                database design to responsive frontends. 
+                <br />
+                <br />
+                I believe in code that
+                is as readable as it is functional, <span className="text-white/80">built to grow as your
+                business does.</span> 
+              </p>
+              <ul className="text-white font-poppins mt-4 capitalize flex items-center gap-x-12 flex-wrap  overflow-hidden mx-4 space-y-3">
+                <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
+                  clean code
+                </li>
+                <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
+                  problem solver
+                </li>
+                <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
+                  team player
+                </li>
+                <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
+                  fast learner
+                </li>
+                <li className="bg-white/5 px-5 py-2 rounded-xl text-white/20 border border-white/10 text-[13px] transition duration-700 hover:text-accent hover:border-accent cursor-pointer">
+                  open source
+                </li>
+              </ul>
             </div>
           </div>
         </section>
