@@ -1,8 +1,14 @@
-import { Code2, Database, ExternalLink, Layers, MonitorSmartphone } from "lucide-react";
+import {
+  Code2,
+  Database,
+  ExternalLink,
+  Layers,
+  MonitorSmartphone,
+} from "lucide-react";
 function App() {
   return (
     <>
-      <div className="bg-primary outline-0 ">
+      <div className="bg-primary outline-0 scroll-smooth">
         {/* navigation starts */}
 
         <header className="sticky top-0 w-full z-50 backdrop-blur-lg border-b border-white/5 mb-4">
@@ -126,7 +132,7 @@ function App() {
                 Yashwanth kumar
               </p>
               <p className="text-accent uppercase font-poppins text-sm font-semibold tracking-wider pl-3 mt-1">
-                java full stack developers
+                java full stack developer
               </p>
               <div className="flex border-b border-white/10 pb-2 justify-between capitalize font-poppins text-sm mx-3 p-3 mt-3">
                 <p className="text-white/20 tracking-wide">location</p>
@@ -303,7 +309,7 @@ function App() {
         {/* project section ends */}
 
         {/* expertise section starts */}
-        <div className="border border-t-white/5 mx-4">
+        <div className="border border-t-white/5 mx-4 py-20 ">
           <p className="text-accent font-poppins ml-3 xl:text-xl uppercase mt-10 tracking-wide">
             expertise
           </p>
@@ -314,12 +320,16 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:mx-16">
             {/* 1 card */}
             <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
-              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Full-Stack Architecture</h1>
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">
+                Full-Stack Architecture
+              </h1>
               <div className="flex items-center gap-3 mt-4 text-lg">
-                <i >
-                  <Layers size={20} className="text-accent/60"/>
+                <i>
+                  <Layers size={20} className="text-accent/60" />
                 </i>
-                <h2 className="text-accent/60 capitalize font-poppins">building logic and experience</h2>
+                <h2 className="text-accent/60 capitalize font-poppins">
+                  building logic and experience
+                </h2>
               </div>
               <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
                 I don’t just build features; I architect systems where every
@@ -335,50 +345,133 @@ function App() {
 
             {/* 2 card */}
             <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
-              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Backend & Database</h1>
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">
+                Backend & Database
+              </h1>
               <div className="flex items-center gap-3 mt-4 text-lg">
-                <i >
-                  <Database size={20} className="text-accent/60"/>
+                <i>
+                  <Database size={20} className="text-accent/60" />
                 </i>
-                <h2 className="text-accent/60 capitalize font-poppins">Data Built for the Long Haul</h2>
+                <h2 className="text-accent/60 capitalize font-poppins">
+                  Data Built for the Long Haul
+                </h2>
               </div>
               <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
-               I believe a product is only as strong as its foundation. Whether it’s managing thousands of products in SmileCart or handling custom client data, I focus on building clean MySQL schemas that are optimized for speed and integrity. I’m obsessed with database normalization and query performance because I know that as your business scales, your data shouldn't be what slows you down. I build for today with an eye on tomorrow.
+                I believe a product is only as strong as its foundation. Whether
+                it’s managing thousands of products in SmileCart or handling
+                custom client data, I focus on building clean MySQL schemas that
+                are optimized for speed and integrity. I’m obsessed with
+                database normalization and query performance because I know that
+                as your business scales, your data shouldn't be what slows you
+                down. I build for today with an eye on tomorrow.
               </p>
             </div>
 
             {/* 3 card */}
             <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
-              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Frontend Excellence</h1>
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">
+                Frontend Excellence
+              </h1>
               <div className="flex items-center gap-3 mt-4 text-lg">
-                <i >
-                  <MonitorSmartphone size={20} className="text-accent/60"/>
+                <i>
+                  <MonitorSmartphone size={20} className="text-accent/60" />
                 </i>
-                <h2 className="text-accent/60 capitalize font-poppins">Interfaces with an Impact</h2>
+                <h2 className="text-accent/60 capitalize font-poppins">
+                  Interfaces with an Impact
+                </h2>
               </div>
               <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
-               Code is invisible to the user—the interface is everything. That’s why I treat the frontend with as much respect as the backend logic. Using Tailwind CSS, I craft pixel-perfect, mobile-first UIs that don't just look good but feel natural to use. In projects like YoursGiftStory, I focus on the 'micro-moments'—smooth transitions and rapid load times—because I know that a great user experience is what turns a visitor into a loyal customer.
+                Code is invisible to the user—the interface is everything.
+                That’s why I treat the frontend with as much respect as the
+                backend logic. Using Tailwind CSS, I craft pixel-perfect,
+                mobile-first UIs that don't just look good but feel natural to
+                use. In projects like YoursGiftStory, I focus on the
+                'micro-moments'—smooth transitions and rapid load times—because
+                I know that a great user experience is what turns a visitor into
+                a loyal customer.
               </p>
             </div>
 
             {/* 4 card */}
             <div className="border border-white/2 bg-white/5 p-6 rounded-xl mt-9">
-              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">Software Engineering</h1>
+              <h1 className="text-white/60 font-poppins capitalize text-2xl text-center leading-relaxed">
+                Software Engineering
+              </h1>
               <div className="flex items-center gap-3 mt-4 text-lg">
-                <i >
-                  <Code2 size={20} className="text-accent/60"/>
+                <i>
+                  <Code2 size={20} className="text-accent/60" />
                 </i>
-                <h2 className="text-accent/60 capitalize font-poppins">Code that Speaks for Itself</h2>
+                <h2 className="text-accent/60 capitalize font-poppins">
+                  Code that Speaks for Itself
+                </h2>
               </div>
               <p className="text-white/50 text-justify mt-4 font-poppins capitalize leading-relaxed">
-               I’m a firm believer that 'done' is not the same as 'right.' I write code that is clean, modular, and built to be shared. By following SOLID principles and maintaining strict engineering standards, I ensure that my projects are easy to maintain and simple to scale. I focus on reducing technical debt from day one, so that when the business needs to pivot or grow, the codebase is a launchpad, not an anchor.
+                I’m a firm believer that 'done' is not the same as 'right.' I
+                write code that is clean, modular, and built to be shared. By
+                following SOLID principles and maintaining strict engineering
+                standards, I ensure that my projects are easy to maintain and
+                simple to scale. I focus on reducing technical debt from day
+                one, so that when the business needs to pivot or grow, the
+                codebase is a launchpad, not an anchor.
               </p>
             </div>
           </div>
           {/* cart ends*/}
         </div>
-
         {/* expertise section ends */}
+
+        {/* footer section starts */}
+        <footer>
+          <div className="relative overflow-hidden border border-t-white/5 pt-20">
+            <div className="absolute w-50 h-50 blur-2xl bg-accent/20 top-20 right-50 md:right-130" />
+            <div className="text-center">
+              <p className="w-fit mx-auto border border-accent/50 px-5 py-2 rounded-2xl bg-white/5 text-accent backdrop-blur-md capitalize">
+                Let's connect
+              </p>
+            </div>
+
+            <div className="mt-8">
+              <h1 className="font-bold font-poppins text-white w-fit mx-auto capitalize text-4xl tracking-wide md:text-5xl lg:text-6xl xl:text-7xl">
+                let's build
+              </h1>
+              <p className="text-accent  w-fit mx-auto italic font-poppins text-4xl mt-1 tracking-wide md:text-5xl lg:text-6xl xl:text-7xl">
+                together.
+              </p>
+            </div>
+            <div>
+              <p className="text-white/30 text-center mt-8 leading-relaxed mx-3">
+                Open to full-time roles, freelance, and interesting
+                collaborations. I respond within 24 hours.
+              </p>
+            </div>
+
+            <div className="mt-12 max-w-md mx-auto outline-0 mb-4">
+              <form className="flex flex-col sm:flex-row gap-3 p-1 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md focus-within:border-accent/50 transition-all">
+                <input
+                  type="email"
+                  placeholder="yourname@gmail.com"
+                  className="flex-1 bg-transparent py-3 px-4 outline-none text-white placeholder:text-white/20 font-poppins text-sm"
+                />
+                <button
+                  type="submit"
+                  className="bg-accent hover:bg-accent/80 text-white font-poppins px-6 py-3 rounded-lg transition-all active:scale-95 font-semibold text-sm cursor-pointer"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <div className="border border-t-white/10 flex items-center justify-between mt-10 py-5">
+              <div className="ml-6">
+                <h1 className="text-white/20 font-mono mt-4 text-xl">{"<yashwanth kumar />"}</h1>
+              </div>
+              <div className="ml-6">
+                <h2  className="text-white/20 font-mono mt-4 text-lg mr-8">@ 2025 . JAVA FULL STACK DEVELOPER</h2>
+              </div>
+            </div>
+          </div>
+        </footer>
+        {/* footer section ends */}
       </div>
     </>
   );
