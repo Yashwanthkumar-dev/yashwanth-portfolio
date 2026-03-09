@@ -10,6 +10,7 @@ function App() {
   const whatappNumnber = "918148035717";
   const message = "hi were are like to hire you !!!";
   const url = `https://wa.me/${whatappNumnber}?${message}`;
+  const SECRETKEY = "0f513161-d12f-4245-83f5-33bee768137e";
 
   return (
     <>
@@ -91,7 +92,7 @@ function App() {
               </h3>
               <div className="flex flex-col">
                 <button className="rounded-lg py-3 w-full text-white font-poppins  capitalize mt-4 bg-blue-700 hover:bg-accent md:w-80 lg:w-98 xl:w-120 transition duration-500 hover:shadow-accent shadow-md cursor-pointer hover:scale-110">
-                  view project
+                  <a href="#project"> view project</a>
                 </button>
                 <button className="rounded-lg py-3 w-full text-white/40 font-poppins  capitalize mt-4  border border-white/20 backdrop-blur-md bg-white/1 md:w-80 lg:w-98 xl:w-120 hover:bg-white/10 cursor-pointer transition duration-500 hover:scale-110">
                   get in touch
@@ -242,17 +243,19 @@ function App() {
           </div>
           <div className="xl:grid grid-cols-2 gap-8 lg:grid lg:grid-cols-2 mx-7">
             <div className="border border-accent/20 rounded-lg p-5 leading-relaxed mt-8 bg-white/3 group">
-              <div className="flex item-center justify-between">
-                <h1 className="font-poppins text-accent text-lg sm:text-xl">
-                  SmileCart -Full Stack E-Commerce Platform
-                </h1>
-                <a href="">
-                  <ExternalLink
-                    size={20}
-                    className="text-accent group-hover:scale-[1.3] duration-700 transition-all"
-                  />
-                </a>
-              </div>
+              <a href="https://github.com/Yashwanthkumar-dev/SmileCart-Backend.git">
+                <div className="flex item-center justify-between">
+                  <h1 className="font-poppins text-accent text-lg sm:text-xl">
+                    SmileCart -Full Stack E-Commerce Platform
+                  </h1>
+                  <a href="">
+                    <ExternalLink
+                      size={20}
+                      className="text-accent group-hover:scale-[1.3] duration-700 transition-all"
+                    />
+                  </a>
+                </div>
+              </a>
 
               <div>
                 <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
@@ -288,17 +291,19 @@ function App() {
             </div>
 
             <div className="border border-accent/20 rounded-lg p-5 leading-relaxed mt-8 bg-white/3 group">
-              <div className="flex item-center justify-between">
-                <h1 className="font-poppins text-accent/80 text-lg">
-                  YoursGiftStory – Personalized Gifting Platform
-                </h1>
-                <a href="">
-                  <ExternalLink
-                    size={20}
-                    className="text-accent group-hover:scale-[1.3] duration-700 transition-all"
-                  />
-                </a>
-              </div>
+              <a href="https://github.com/Yashwanthkumar-dev/yoursGiftStory.git">
+                <div className="flex item-center justify-between">
+                  <h1 className="font-poppins text-accent/80 text-lg">
+                    YoursGiftStory – Personalized Gifting Platform
+                  </h1>
+                  <a href="">
+                    <ExternalLink
+                      size={20}
+                      className="text-accent group-hover:scale-[1.3] duration-700 transition-all"
+                    />
+                  </a>
+                </div>
+              </a>
 
               <div>
                 <p className="text-white/50 text-justify leading-relaxed mt-4 text-md">
@@ -469,10 +474,16 @@ function App() {
             </div>
 
             <div className="mt-12 max-w-md mx-auto outline-0 mb-4">
-              <form className="flex flex-col sm:flex-row gap-3 p-1 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md focus-within:border-accent/50 transition-all">
+              <form
+                method="POST"
+                action="https://api.web3forms.com/submit"
+                className="flex flex-col sm:flex-row gap-3 p-1 bg-white/5 border border-white/10 rounded-xl backdrop-blur-md focus-within:border-accent/50 transition-all"
+              >
+                <input type="hidden" name="access_key" value={SECRETKEY} />
                 <input
                   type="email"
                   placeholder="yourname@gmail.com"
+                  name="email"
                   className="flex-1 bg-transparent py-3 px-4 outline-none text-white placeholder:text-white/20 font-poppins text-sm"
                 />
                 <button
@@ -492,7 +503,7 @@ function App() {
               </div>
               <div className="ml-6">
                 <h2 className="text-white/20 font-mono mt-4 text-lg mr-8">
-                  @ 2025 . JAVA FULL STACK DEVELOPER
+                  @ {new Date().getFullYear()} . JAVA FULL STACK DEVELOPER
                 </h2>
               </div>
             </div>
