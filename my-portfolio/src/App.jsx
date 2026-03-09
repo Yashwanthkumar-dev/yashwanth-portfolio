@@ -5,10 +5,15 @@ import {
   Layers,
   MonitorSmartphone,
 } from "lucide-react";
+import "../src/App.css";
 function App() {
+  const whatappNumnber = "918148035717";
+  const message = "hi were are like to hire you !!!";
+  const url = `https://wa.me/${whatappNumnber}?${message}`;
+
   return (
     <>
-      <div className="bg-primary outline-0 scroll-smooth">
+      <div className="bg-primary outline-0 scroll-smooth duration-700">
         {/* navigation starts */}
 
         <header className="sticky top-0 w-full z-50 backdrop-blur-lg border-b border-white/5 mb-4">
@@ -18,14 +23,23 @@ function App() {
               <span className="text-accent">.</span>
             </h1>
             <ul className="hidden md:inline-flex md:text-white/50 md:font-mono md:gap-x-5 uppercase lg:gap-x-7 xl:gap-x-9 ">
-              <li className="">home</li>
-              <li className="">about</li>
-              <li className=""> skills</li>
-              <li className="">project</li>
-              <li className="">contact</li>
+              <li className="nav duration-500 hover:text-accent">
+                {" "}
+                <a href="#home">home</a>{" "}
+              </li>
+              <li className="nav duration-500 hover:text-accent">
+                <a href="#about">about</a>
+              </li>
+              {/* <li className="nav duration-500 hover:text-accent"> skills</li> */}
+              <li className="nav duration-500 hover:text-accent">
+                <a href="#project">project</a>
+              </li>
+              <li className="nav duration-500 hover:text-accent">
+                <a href="#contact">contact</a>
+              </li>
             </ul>
             <button className="text-white text-sm  font-mono capitalize px-5 py-2 border border-white/5 bg-white/10 backdrop-blur-md rounded-xl sm:text-md cursor-pointer hover:bg-primary hover:border-accent hover:text-accent duration-500 transition-all hover:scale-[1.05]">
-              hire me
+              <a href={url}>hire me</a>
             </button>
           </div>
         </header>
@@ -33,7 +47,10 @@ function App() {
         {/* navigation ends */}
 
         {/* hero section starts */}
-        <section className="relative px-6 pt-2 pb-16 font-poppins md:mt-30 xl:mx-20">
+        <section
+          className="relative px-6 pt-2 pb-16 font-poppins md:mt-30 xl:mx-20"
+          id="home"
+        >
           <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/20 rounded-full blur-[100px] pointer-events-none animate-pulse  transition-transform duration-700" />
 
           <p className="inline-flex items-center gap-2 border border-white/10 bg-white/5 backdrop-blur-md rounded-full px-5 py-2 text-blue-300 text-xs uppercase tracking-widest mb-10">
@@ -51,7 +68,7 @@ function App() {
 
           {/*                                                            parent open                        */}
 
-          <div className=" inline md:flex md:items-center md:justify-between">
+          <div className=" inline md:flex md:items-center md:justify-between ">
             {/* left side  */}
             <div className=" border md:border-r-gray-400/10 md:pr-7 md:py-10 lg:pr-30 lg:pl-3 xl:pl-10 xl:pr-0 xl:border-0">
               <h3 className="text-gray-400/60 font-poppins md:text-md lg:text-lg">
@@ -117,7 +134,7 @@ function App() {
           </marquee>
         </div>
         {/* About me section starts*/}
-        <section className="mt-8 leading-relaxed xl:mx-17 pb-10">
+        <section className="mt-8 leading-relaxed xl:mx-17 pb-10" id="about">
           <p className="text-accent font-poppins ml-3 xl:text-xl">About</p>
           <h1 className="text-white font-poppins ml-5 mt-2 text-4xl font-semibold tracking-tight xl:text-6xl">
             Who I am.
@@ -201,7 +218,10 @@ function App() {
 
         {/* project section starts */}
 
-        <div className="border border-t-white/5 relative overflow-hidden py-20 mx-4">
+        <div
+          className="border border-t-white/5 relative overflow-hidden py-20 mx-4"
+          id="project"
+        >
           <div className="absolute bg-accent/10 w-50 h-50 top-10 right-19 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bg-accent/10 w-50 h-50 top-180 left-19 rounded-full blur-3xl pointer-events-none" />
 
@@ -422,7 +442,10 @@ function App() {
 
         {/* footer section starts */}
         <footer>
-          <div className="relative overflow-hidden border border-t-white/5 pt-20">
+          <div
+            className="relative overflow-hidden border border-t-white/5 pt-20"
+            id="contact"
+          >
             <div className="absolute w-50 h-50 blur-2xl bg-accent/20 top-20 right-50 md:right-130" />
             <div className="text-center">
               <p className="w-fit mx-auto border border-accent/50 px-5 py-2 rounded-2xl bg-white/5 text-accent backdrop-blur-md capitalize">
@@ -463,10 +486,14 @@ function App() {
 
             <div className="border border-t-white/10 flex items-center justify-between mt-10 py-5">
               <div className="ml-6">
-                <h1 className="text-white/20 font-mono mt-4 text-xl">{"<yashwanth kumar />"}</h1>
+                <h1 className="text-white/20 font-mono mt-4 text-xl">
+                  {"<yashwanth kumar />"}
+                </h1>
               </div>
               <div className="ml-6">
-                <h2  className="text-white/20 font-mono mt-4 text-lg mr-8">@ 2025 . JAVA FULL STACK DEVELOPER</h2>
+                <h2 className="text-white/20 font-mono mt-4 text-lg mr-8">
+                  @ 2025 . JAVA FULL STACK DEVELOPER
+                </h2>
               </div>
             </div>
           </div>
