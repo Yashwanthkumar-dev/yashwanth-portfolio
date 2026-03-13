@@ -131,6 +131,9 @@ function App() {
               <li className="text-white/20 font-poppins tracking-wide marker:text-accent  pr-10">
                 restapi's
               </li>
+              <li className="text-white/20 font-poppins tracking-wide marker:text-accent  pr-10">
+                docker
+              </li>
             </ul>
           </marquee>
         </div>
