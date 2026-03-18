@@ -94,9 +94,9 @@ function App() {
                 <button className="rounded-lg py-3 w-full text-white font-poppins  capitalize mt-4 bg-blue-700 hover:bg-accent md:w-80 lg:w-98 xl:w-120 transition duration-500 hover:shadow-accent shadow-md cursor-pointer hover:scale-110">
                   <a href="#project"> view project</a>
                 </button>
-                <button className="rounded-lg py-3 w-full text-white/40 font-poppins  capitalize mt-4  border border-white/20 backdrop-blur-md bg-white/1 md:w-80 lg:w-98 xl:w-120 hover:bg-white/10 cursor-pointer transition duration-500 hover:scale-110">
-                  get in touch
-                </button>
+                <a href="/yashwanth-kumar-resume.pdf" download="yashwanth-kumar-resume.pdf"><button className="rounded-lg py-3 w-full text-white/40 font-poppins  capitalize mt-4  border border-white/20 backdrop-blur-md bg-white/1 md:w-80 lg:w-98 xl:w-120 hover:bg-white/10 cursor-pointer transition duration-500 hover:scale-110">
+                  My resume
+                </button></a>
               </div>
             </div>
           </div>
