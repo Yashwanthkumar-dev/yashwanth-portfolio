@@ -14,8 +14,8 @@ export const Cards = ({ title, description, features }) => {
         sm:p-6
         lg:p-7
 
-        bg-gray-900/30
-        backdrop-blur-md
+        bg-white/5
+        backdrop-blur-2xl
 
         hover:border-accent/40
         hover:-translate-y-2
@@ -27,7 +27,6 @@ export const Cards = ({ title, description, features }) => {
     >
       {/* Content */}
       <div>
-
         <h4
           className="
             text-white/90
@@ -59,12 +58,10 @@ export const Cards = ({ title, description, features }) => {
         >
           {description}
         </p>
-
       </div>
 
       {/* Features */}
       <div className="mt-8">
-
         <p
           className="
             text-white
@@ -93,15 +90,12 @@ export const Cards = ({ title, description, features }) => {
                 leading-6
               "
             >
-              <span className="text-accent mt-1 text-lg">
-                •
-              </span>
+              <span className="text-accent mt-1 text-lg">•</span>
 
               <span>{feature}</span>
             </li>
           ))}
         </ul>
-
       </div>
     </div>
   );

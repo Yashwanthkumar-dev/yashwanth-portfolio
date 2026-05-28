@@ -296,9 +296,9 @@ function App() {
           </div>
         </div>
         {/* services Section */}
-        <section className=" mx-6">
+        <section className=" mx-6 md:mx-8 lg:mx-11 xl:mx-20 2xl:mx-25">
           <h3 className="text-accent font-mono uppercase">Services I Offer</h3>
-          <p className="text-white font-mono text-4xl capitalize font-semibold mt-4">
+          <p className="text-white font-mono text-4xl capitalize font-bold mt-4">
             Scalable Web Systems
           </p>
           <ServicesCard/>
